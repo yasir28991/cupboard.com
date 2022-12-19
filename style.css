@@ -65,6 +65,10 @@ header button {
     color: white;
 }
 
+header button:focus {
+    outline: 0;
+}
+
 .desktop-nav  {
     display: none;
 }
