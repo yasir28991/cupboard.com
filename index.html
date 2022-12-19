@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.2/font/bootstrap-icons.min.css" integrity="sha512-YFENbnqHbCRmJt5d+9lHimyEMt8LKSNTMLSaHjvsclnZGICeY/0KYEeiHwD1Ux4Tcao0h60tdcMv+0GljvWyHg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- title -->
+    <title>cupboard</title>
+</head>
+<!--! Please use the better-comment vs code's extension-->
+<body>
+    <!-- *header -->
+    <header>
+        <!--*logo -->
+        <div class="logo flex-row-center">
+            <h1>Cupboard</h1>
+        </div>
+        <!--*navigation (larger viewport)-->
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="#">coupons</a></li>
+                <li><a href="#">new offers</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        <!--* mobile navigation -->
+        <button id="menu-btn"><i class="bi bi-list menu"></i></button>
+        <nav class="mobile-nav">
+            <div class="close-div">
+                <button id="close-btn"><i class="bi bi-x-square-fill close-btn"></i></button>
+            </div>
+            <div class="menu-inner">
+                <ul>
+                    <li><a href="#">coupons</a></li>
+                    <li><a href="#">new offers</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </div>
+            <div class="social-icons">
+                <i class="bi bi-facebook fb-icon s-icon"></i>
+                <i class="bi bi-instagram insta-icon s-icon"></i>
+                <i class="bi bi-github github-icon s-icon"></i>
+            </div>
+        </nav>
+    </header>
+    <!---->
+    <!--*main -->
+    <main>
+        <!-- all items of ecomerce -->
+        <div class="items"></div>
+    </main>
+        <!-- footer -->
+    <footer></footer>
+
+    <!-- *javascript -->
+    <!--!main javascript-->
+    <script src="js/main.js"></script>
+    <!-- *hamburger menu javascript -->
+    <script src="/js/hamburger.js"></script>
+</body>
+</html>

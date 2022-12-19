@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('/Offline fonts/Roboto/Roboto-Black.ttf');
+}
+
+:root {
+    --roboto: 'Roboto';
+    --brand-blue: rgb(31, 106, 171);
+    --brand-color: rgb(41, 21, 21);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    font-family: var(--roboto), sans-serif;
+}
+
+/* *Code below is all about navigation, icons of navigation, header and the media query of hamburger menu for mobile phones */ 
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brand-color);
+    align-items: center;
+    color: #fff;
+    height: 70px;
+    padding-inline: 1em
+}
+
+/* icons hover*/
+.fb-icon:hover {
+    color: #1778F2;
+}
+
+.insta-icon:hover {
+    color: #C13584;
+}
+
+.github-icon:hover {
+    color: #999999;
+}
+/***************/
+
+/* s = social icons */
+div.social-icons {
+    justify-self: center; 
+    /* align-self: center; */
+}
+
+.s-icon {
+    margin-inline: 0.3em;
+    font-size: 1.5rem;
+}
+/*************/
+
+header button {
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    color: white;
+}
+
+.desktop-nav  {
+    display: none;
+}
+
+.desktop-nav a, .mobile-nav a {
+    display: inline-block;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mobile-nav{
+    background-color: #1c1c1c;
+    width: 80%;
+    max-width: 350px;
+    margin-inline: auto;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 300px;
+    z-index: 10;
+    display: none;
+    grid-template-rows: 28px auto auto;
+}
+
+.menu-inner {
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.menu-inner a {
+    font-size: 1.5rem;
+    transition: transform 150ms;
+    text-transform: uppercase;
+    margin-block: 0.3em;
+}
+
+.menu-inner a:hover {
+    transform: scale(1.1);
+    background-color: var(--brand-blue);
+    text-shadow: 2px 2px 2px #1c1c1c;
+    padding: 0.2em;
+    border-radius: 4px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.menu {
+    font-size: 2.5em;
+    cursor: pointer;
+}
+
+.close-div {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+}
+
+.close-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 0.3em;
+    margin-right: 0.2em;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+.menu:hover {
+    color: var(--brand-blue);
+}
+
+
+
+/* CSS */
+
+/* navigation-media queries */
+
+@media (min-width: 690px)  {
+    header {
+        justify-content: space-around;
+    }
+    .desktop-nav {
+        display: inline-block;
+        padding: 0;
+    }
+    .desktop-nav ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .desktop-nav a {
+        margin-inline: 0.5em;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .desktop-nav a:hover , .desktop-nav a:focus {
+        background-color: rgb(31, 106, 171);
+        text-shadow: 2px 2px 2px #1c1c1c;
+        padding: 0.3em;
+        border-radius: 4px;
+    }
+    .menu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+/*****The End of navigation and header*****/
+
+/* !main page */
