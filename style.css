@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Roboto';
-    src: url('/Offline fonts/Roboto/Roboto-Black.ttf');
+    src: url('fonts/Roboto-Black.ttf');
 }
 
 :root {
