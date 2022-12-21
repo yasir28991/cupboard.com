@@ -19,6 +19,10 @@ html, body {
     font-family: var(--roboto), sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* *Code below is all about navigation, icons of navigation, header and the media query of hamburger menu for mobile phones */ 
 
 header {
@@ -207,7 +211,7 @@ div.explore-now {
 
 .col-1 h1{
     font-family: var(--roboto);
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .col-1 button {
@@ -249,9 +253,38 @@ div.explore-now {
 @media (min-width: 690px) {
     div.explore-now {
         flex-direction: row;
-        gap: 0;
+        gap: 0.3;
+        padding: 1.5em;
+    }
+    .col-1 {
+        align-self: center;
     }
 }
 /****************/
 
 /* !main page */
+
+/* *featured items */
+.rating {
+    color: #FF9529;
+}
+
+.featured-items {
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+
+/* .f-col-1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.f-col-2 {
+    display: flex;
+    justify-content: center;
+} */
